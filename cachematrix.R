@@ -1,6 +1,5 @@
-## The following caches the inverse of a matrix  
+## The following function creates a list to cache the inverse of a matrix  
 
-## 
 makeCacheMatrix <- function(x = matrix()) {
     i <- NULL  
 #initialises object i to NULL in the defining environment.
@@ -24,8 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## This function checks for a cached matrix inverse and if one does not exist it creates one. 
-
-cacheSolve <- function(x, ...) {cacheSolve <- function(x, ...) {
+cacheSolve <- function(x, ...) {
     i <- x$getinverse() 
 #the value the inverse (from the defining environment) is assigned to i
     if(!is.null(i)) { 
